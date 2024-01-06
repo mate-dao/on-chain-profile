@@ -23,7 +23,7 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.17",
+        version: "0.8.23",
         settings: {
           optimizer: {
             enabled: true,
@@ -35,13 +35,13 @@ const config: HardhatUserConfig = {
   },
   networks: {
     klaytn: {
-      url: "https://public-node-api.klaytnapi.com/v1/cypress",
+      url: "https://public-en-cypress.klaytn.net",
       accounts,
       chainId: 8217,
       gasPrice: 250000000000,
     },
     "klaytn-testnet": {
-      url: "https://public-node-api.klaytnapi.com/v1/baobab",
+      url: "https://public-en-baobab.klaytn.net",
       accounts,
       chainId: 1001,
     },
